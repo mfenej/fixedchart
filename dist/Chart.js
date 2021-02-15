@@ -1528,7 +1528,7 @@ function getAlpha(string) {
 // generators
 function hexString(rgba, a) {
    var a = (a !== undefined && rgba.length === 3) ? a : rgba[3];
-   return "#" + hexDouble(rgba[0]) 
+   return "#" + hexDouble(rgba[0])
               + hexDouble(rgba[1])
               + hexDouble(rgba[2])
               + (
@@ -2995,7 +2995,7 @@ defaults._set('global', {
 	defaultColor: 'rgba(0,0,0,0.1)',
 	defaultFontColor: '#666',
 	defaultFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-	defaultFontSize: 12,
+	defaultFontSize: 8,
 	defaultFontStyle: 'normal',
 	defaultLineHeight: 1.2,
 	showLines: true
