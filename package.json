@@ -15,10 +15,7 @@
     "html5",
     "responsive"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chartjs/Chart.js.git"
-  },
+ 
   "bugs": {
     "url": "https://github.com/chartjs/Chart.js/issues"
   },
