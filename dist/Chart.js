@@ -4499,12 +4499,16 @@ var element_point = core_element.extend({
 		};
 	},
 
-	draw: function(chartArea) {
+	draw: function(chartArea, index) {
 		var vm = this._view;
 		var ctx = this._chart.ctx;
 		var pointStyle = vm.pointStyle;
 		var rotation = vm.rotation;
-		var radius = vm.radius;
+		var radius = 2;
+
+		if(index > 0){
+			radius = 0;
+		}
 		var x = vm.x;
 		var y = vm.y;
 		var globalDefaults = core_defaults.global;
@@ -6115,7 +6119,7 @@ var controller_line = core_datasetController.extend({
 
 		// Draw the points
 		for (; i < ilen; ++i) {
-			points[i].draw(area);
+			points[i].draw(area, i);
 		}
 	},
 
