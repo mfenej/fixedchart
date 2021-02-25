@@ -12358,10 +12358,12 @@ var Scale = core_element.extend({
 					ctx.lineTo(item.tx2, item.ty2);
 				}
 
-				if (gridLines.drawOnChartArea) {
-					ctx.moveTo(item.x1, item.y1);
-					ctx.lineTo(item.x2, item.y2);
-				}
+				// if (gridLines.drawOnChartArea) {
+				// 	ctx.moveTo(item.x1, item.y1);
+				// 	ctx.lineTo(item.x2, item.y2);
+				// }
+				ctx.moveTo(item.x1, item.y1);
+				ctx.lineTo(item.x2, item.y2);
 
 				ctx.stroke();
 				ctx.restore();
