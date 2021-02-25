@@ -5795,11 +5795,19 @@ core_defaults._set('line', {
 	scales: {
 		xAxes: [{
 			type: 'category',
-			id: 'x-axis-0'
+			id: 'x-axis-0',
+			gridLines: {
+				display:true,
+				offsetGridLines: true
+			}
 		}],
 		yAxes: [{
 			type: 'linear',
-			id: 'y-axis-0'
+			id: 'y-axis-0',
+			gridLines: {
+				display:false,
+				offsetGridLines: true
+			}
 		}]
 	}
 });
