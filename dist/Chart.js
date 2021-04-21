@@ -5798,7 +5798,7 @@ core_defaults._set('line', {
 			id: 'x-axis-0',
 			gridLines: {
 				display:true,
-				offsetGridLines: true
+				offsetGridLines: false
 			}
 		}],
 		yAxes: [{
@@ -5806,7 +5806,7 @@ core_defaults._set('line', {
 			id: 'y-axis-0',
 			gridLines: {
 				display:false,
-				offsetGridLines: true
+				offsetGridLines: false
 			}
 		}]
 	}
